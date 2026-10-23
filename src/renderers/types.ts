@@ -1,6 +1,7 @@
 /** Minimal subset of the markdown-it API used by this extension. */
 export interface MarkdownIt {
 	utils: { escapeHtml(str: string): string };
+	renderInline(src: string, env?: unknown): string;
 	renderer: {
 		rules: Record<string, RenderRule | undefined>;
 	};
