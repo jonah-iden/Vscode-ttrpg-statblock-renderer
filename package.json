@@ -3,6 +3,7 @@
   "displayName": "markdown statblock renderer",
   "description": "renderer for statblocks for different ttrpg systems for vscode's markdown preview",
   "version": "0.0.1",
+  "repository": "https://github.com/jonah-iden/Vscode-ttrpg-statblock-renderer",
   "engines": {
     "vscode": "^1.140.0"
   },
