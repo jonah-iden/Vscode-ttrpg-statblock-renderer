@@ -6,7 +6,7 @@ Supported systems:
 
 | Fence tag | System |
 |---|---|
-| `dcc-mob` | DCC monsters (mobs and bosses) |
+| `dcc-mob` | Dungeon Crawler Carl RPG monsters (mobs and bosses) |
 
 ## Usage
 
@@ -56,7 +56,7 @@ Values like `12+F`, `1d8+2 Bludgeoning` or `10ft (Reach)` are fine without quote
 ````markdown
 ```dcc-mob
 name: Hooligans Ultra
-title: Nachbarschafts-Boss (Neighborhood Boss)
+title: Neighborhood Boss
 rank: Boss
 size: Large
 type: Avian/Humanoid Hybrid
@@ -73,16 +73,16 @@ dex: 8
 cha: 10
 
 attacks:
-  Eiserne Kette: { hit: 13+F, damage: 2d6+3 Bludgeoning, range: 10ft (Reach) }
+  Iron Chain: { hit: 13+F, damage: 2d6+3 Bludgeoning, range: 10ft (Reach) }
   Tackle: { hit: 13+F, damage: 1d6+3 Bludgeoning + Knockback }
-  Improvisierter Molotow:
+  Improvised Molotov:
     hit: 12+F
     damage: 1d4+2 Fire
     range: 20ft
     note: Creates a burning field (5ft radius, 1d4 fire damage on entering).
 
 abilities:
-  Fangesang der Schande (Schrei): >
+  Fan Chant of Shame (Shout): >
     Once per fight. All Crawlers within 30ft must pass an Int/Mental check
     or become Enraged until the end of the next round.
   Ultra-Motivation: Allied Hooligans within 15ft get +1 DR.
@@ -183,11 +183,11 @@ attacks:
 
 ### Abilities
 
-`abilities` maps each ability's name to its description. Text in parentheses at the end of the name, such as `(Aura)` or `(Schrei)`, is shown as a small tag next to the name.
+`abilities` maps each ability's name to its description. Text in parentheses at the end of the name, such as `(Aura)` or `(Shout)`, is shown as a small tag next to the name.
 
 ```yaml
 abilities:
-  Aggressives Zischen (Aura): >
+  Aggressive Hiss (Aura): >
     Any creature that starts its turn within 5ft of a Hooligan
     must win a Dex/Evade contest or lose 1 positioning field.
 ```
