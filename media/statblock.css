@@ -1,0 +1,12 @@
+.statblock {
+	border: 1px solid var(--vscode-editorWidget-border, #888);
+	border-left-width: 4px;
+	border-radius: 4px;
+	padding: 0.5em 0.8em;
+	margin: 1em 0;
+	background: var(--vscode-textBlockQuote-background);
+}
+.statblock-name { font-weight: bold; font-size: 1.2em; }
+.statblock dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.1em 0.8em; margin: 0.4em 0 0; }
+.statblock dt { font-weight: bold; }
+.statblock dd { margin: 0; }
